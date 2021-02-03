@@ -1,0 +1,30 @@
+body {
+  background-color: #2a1d88;
+  color: #ffffff;
+  font-family: 'Open Sans';
+  padding: 0 .2rem;
+}
+
+header {
+
+}
+header h1 {
+  display: flex;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+header h1 span {
+  display: block;
+  background-color: #ffffff;
+  color: #2a1d88;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  margin-right: .2rem;
+  line-height: 2rem;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+}
+header h2 {
+  font-weight: 300;
+}
