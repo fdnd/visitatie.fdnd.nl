@@ -39,6 +39,9 @@ header p {
   font-size: .80rem;
 }
 
+img {
+  width: 100%;
+}
 
 h2 {
   font-weight: 300;
