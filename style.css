@@ -50,6 +50,35 @@ a {
   color: white;
 }
 
+article {
+  background: white;
+  color: black;
+}
+
+article table {
+  font-size: .7rem;
+  overflow-x: auto;
+  display: block;
+  background: #f0f0f0;
+}
+article table :is(th, td) {
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+}
+article table th.blank {
+  border: 0;
+}
+
+article :is(figcaption, caption) {
+  font-size: .9rem;
+  font-style: italic;
+  color: silver;
+  background-color: white;
+  text-align: left;
+  caption-side: bottom;
+}
 
 footer {
   border-top: 1px solid white;
