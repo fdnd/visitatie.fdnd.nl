@@ -164,6 +164,10 @@ div.scrollable {
 footer {
     position: relative;
     z-index:10;
+    padding-top:1rem;
+}
+footer div {
+    margin-top:3rem;
 }
 
 @media (min-width:50em) {
@@ -205,9 +209,7 @@ footer {
     footer {
         grid-area: footer;
     }
-    footer article {
-        padding-top:1rem
-    }
+    
 
     article {
         border: 2px solid var(--highlight-primary);
@@ -221,5 +223,8 @@ footer {
         position: absolute;
         border-radius: var(--radius) var(--radius) 0 0;
         margin:0;
+    }
+    footer div {
+        margin-top:1rem;
     }
 }
