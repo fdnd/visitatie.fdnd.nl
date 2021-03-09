@@ -1,12 +1,16 @@
 html {
     font-size: 18px;
     line-height:1.75;
+    scroll-behavior: smooth;
+}
+body {
+    padding:0;
 }
 mark {
     background-color: var(--highlight-secondary);
     border-radius:var(--radius);
     padding:1rem .5rem .5rem;
-    margin:-1rem 0 1rem;
+    margin: 1rem 0;
     display:block;
 }
 figure {
@@ -49,32 +53,58 @@ header p {
     padding:1rem;
     border-radius:var(--radius);
     position: absolute;
-    right:3rem;
+    right:2rem;
     top:8rem;
     
 }
-main,
-footer {
-    max-width:50em;
+nav {
+    background:var(--highlight-secondary);
+    color: var(--secondary);
+    padding:1rem;
+}
+nav h2 {
+    margin:0;
+}
+nav ul {
+    margin:0;
+    list-style:none;
+    padding:0;
+}
+nav ul li {
+    position:relative;
+    padding-left:1rem;
+}
+nav ul li:before {
+    content: "#";
+    position:absolute;
+    left:0;
+    top:center;
+}
+nav a {
+    color:var(--secondary);
+}
+main {
+    position: relative;
+    z-index:10;
 }
 article {
-    border: 2px solid var(--highlight-primary);
+    background-color: var(--secondary);
     position: relative;
-    padding: 1rem;
-    border-radius: 0 var(--radius) var(--radius) var(--radius);
-    margin: 5rem 0 1rem;
-    color:var(--highlight-primary)
+    padding: 0 1rem 1rem;
+    margin: 0 0 1rem;
+    color:var(--highlight-primary);
+    display:flex;
+    flex-direction: column;
 }
 
 article h2 {
     padding: 1rem 1rem .525rem;
-    position: absolute;
-    top: -4.2rem;
-    left: -2px;
-    margin:0;
+    margin:0 -1rem;
     background: var(--highlight-primary);
-    border-radius: var(--radius) var(--radius) 0 0;
-    color:var(--secondary)
+    color:var(--secondary);
+    align-self: flex-start;
+    border-radius: 0 0 var(--radius) 0;
+
 }
 article h3 {
     color: var(--primary)
@@ -130,4 +160,63 @@ div.scrollable {
     overflow-x:auto;
     background: var(--highlight-primary);
     border-radius: var(--radius);
+}
+footer {
+    position: relative;
+    z-index:10;
+}
+
+@media (min-width:50em) {
+    body {
+        display:grid;
+        padding:1rem;
+        grid-template-columns: 70vw 30vw;
+        grid-template-areas: 
+            "header header"
+            "main nav"
+            "footer .";
+    }
+    header {
+        grid-area: header;
+    }
+    main {
+        grid-area: main;
+    }
+    nav {
+        grid-area: nav;
+        position: fixed;
+        right:1rem;
+        top:16rem;
+        border-radius:var(--radius);
+        width:32vw;
+        z-index:1;
+        padding:2rem 2rem 2rem 4rem;
+        border-radius:var(--radius);
+    }
+    nav h2 {
+        margin:0 0 0 2rem;
+    }
+    nav ul {
+        padding:0 2rem
+    }
+    nav ul li {
+        white-space: nowrap;
+    }
+    footer {
+        grid-area: footer;
+    }
+
+    article {
+        border: 2px solid var(--highlight-primary);
+        border-radius: 0 var(--radius) var(--radius) var(--radius);
+        margin-top: 5rem;
+        margin-bottom:8rem;
+    }
+    article h2 {
+        top: -4.2rem;
+        left: -2px;
+        position: absolute;
+        border-radius: var(--radius) var(--radius) 0 0;
+        margin:0;
+    }
 }
