@@ -12,8 +12,19 @@ mark {
 figure {
     margin:1rem 0;
 }
+figcaption {
+    color: var(--primary);
+    font-style: italic;
+    font-size: 1em;
+    padding-left:0
+}
 img {
     border-radius: var(--radius)
+}
+header {
+    padding-bottom: 3rem;
+    max-width:50em;
+    position: relative;
 }
 header h1 {
     display:flex;
@@ -22,7 +33,7 @@ header h1 {
 header h1 abbr {
     display: block;
     background-color: #ffffff;
-    color: #2a1d88;
+    color: var(--secondary);
     border-radius: 50%;
     font-size: 1.5rem;
     margin-right: .2rem;
@@ -31,8 +42,19 @@ header h1 abbr {
     height: 3rem;
     text-align: center;
     text-decoration: none;
+    flex-shrink: 0;
 }
-main {
+header p {
+    border:2px solid var(--highlight-secondary);
+    padding:1rem;
+    border-radius:var(--radius);
+    position: absolute;
+    right:3rem;
+    top:8rem;
+    
+}
+main,
+footer {
     max-width:50em;
 }
 article {
@@ -70,20 +92,20 @@ article p:first-of-type {
     border-radius:var(--radius)
 }
 table {
-    background: var(--highlight-primary);
+    
     color: var(--secondary);
-    border-radius: var(--radius);
+    
     margin-bottom: 3rem;
     font-size: .9em;
     padding:2rem 0;
     font-size: .85em;
 }
-table caption,
-figcaption {
-    color: var(--primary);
+table caption {
+    color: var(--secondary);
     font-style: italic;
     font-size: 1em;
-    padding-left:0
+    margin-bottom: -1rem;
+    border-bottom: 2px solid var(--secondary);
 }
 table * {
     text-align:left;
@@ -105,4 +127,9 @@ table#leerresultaten tbody th {
 }
 table#organogram tr:nth-of-type(2) th {
     vertical-align: bottom;
+}
+div.scrollable {
+    overflow-x:auto;
+    background: var(--highlight-primary);
+    border-radius: var(--radius);
 }
