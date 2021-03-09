@@ -205,6 +205,9 @@ footer {
     footer {
         grid-area: footer;
     }
+    footer article {
+        padding-top:1rem
+    }
 
     article {
         border: 2px solid var(--highlight-primary);
