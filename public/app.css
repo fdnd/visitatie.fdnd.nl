@@ -33,6 +33,7 @@ header {
 header h1 {
     display:flex;
     align-items: center;
+    font-size: 1.5em;
 }
 header h1 abbr {
     display: block;
@@ -50,17 +51,17 @@ header h1 abbr {
 }
 header p {
     border:2px solid var(--highlight-secondary);
-    padding:1rem;
+    padding:.5rem;
     border-radius:var(--radius);
     position: absolute;
     right:2rem;
-    top:8rem;
-    
+    top:4rem;
 }
 nav {
     background:var(--highlight-secondary);
     color: var(--secondary);
     padding:1rem;
+    margin-top: 2rem;
 }
 nav h2 {
     margin:0;
@@ -183,6 +184,13 @@ footer div {
     header {
         grid-area: header;
     }
+    header h1 {
+        font-size: 3rem;
+    }
+    header p {
+        padding:1rem;
+        top:8rem;
+    }
     main {
         grid-area: main;
     }
@@ -196,6 +204,7 @@ footer div {
         z-index:1;
         padding:2rem 2rem 2rem 4rem;
         border-radius:var(--radius);
+        margin-top: 0;
     }
     nav h2 {
         margin:0 0 0 2rem;
