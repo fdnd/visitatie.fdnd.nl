@@ -207,12 +207,11 @@ nav li:nth-of-type(8) a.active {
 
 /* ARTICLES */
 article {
-    margin: 0; padding: 0;
+    margin: 0; padding: 1rem;
 }
 article > div {
-    background-color: var(--highlight-primary);
-    position: relative;
     padding: 2rem;
+    background: var(--highlight-primary);
     color:var(--secondary);
     border: 2px solid var(--highlight-primary);
     border-radius: var(--radius);
