@@ -97,7 +97,6 @@ header h1 strong {
 
 /* NAVIGATIE */
 nav {
-    /* color: var(--secondary); */
     padding: 1rem;
     margin-top: 2rem;
     z-index:999;
@@ -203,7 +202,18 @@ nav li:nth-of-type(8) a.active {
     border-color: var(--highlight-secondary);
     color: var(--secondary);
 }
-
+nav > a {
+    position: fixed;
+    bottom: 2em;
+    right: 1em;
+    color: var(--highlight-secondary);
+    border-color: var(--highlight-secondary);
+}
+nav > a:hover,
+nav > a:focus {
+    background: var(--highlight-secondary);
+    color: var(--secondary);
+}
 
 /* ARTICLES */
 article {
@@ -234,7 +244,6 @@ article#visitatie ul {
     flex-direction: row;
     flex-wrap: wrap;
     list-style: none;
-    /* justify-content: space-between; */
     margin: 0; padding: 0;
 }
 article#kerndocumenten li a,
@@ -312,39 +321,32 @@ div.scrollable {
 footer {
     display:flex;
     justify-content: flex-end;
-    margin-top:1rem;
+    margin-top: 4rem;
     padding:1rem 0 1rem 1rem;
 }
 
-/*
-@media (min-width:50rem) {
+@media (min-width:60rem) {
     body {
         display: grid;
         padding: 1rem;
-        grid-template-columns: 60vw 40vw;
+        grid-template-columns: auto 26rem;
         grid-template-areas: 
             "header header"
             "main nav"
-            "footer footer";
+            "footer footer";        
     }
     header {
         grid-area: header;
     }
     main {
+        max-width: calc(100vw - 28rem);
         grid-area: main;
     }
     nav {
         grid-area: nav;
-        position: fixed;
-        left: 60vw;
-        top:14rem;
-        
-        border-radius:var(--radius);
-        width:42vw;
-        z-index:1;
-        padding:2rem 2rem 2rem 4rem;
-        border-radius:var(--radius);
-        margin-top: 0;
+    }
+    nav > a {
+        right: 17rem;
     }
     nav h2 {
         margin:0 0 0 2rem;
@@ -359,17 +361,18 @@ footer {
         grid-area: footer;
     }
 }
-*/
-/* 
 @media (min-width: 90rem) {
     body {
         display: grid;
         padding: 1rem;
-        grid-template-columns: 50rem 30rem auto;
+        grid-template-columns: 60rem 30rem auto;
         grid-template-areas: 
-            "header header ."
+            "header header header"
             "main nav ."
-            "footer footer .";
+            "footer footer footer";
     }
-
-} */
+    nav > a {
+        left: 62rem;
+        right: auto;
+    }
+}
