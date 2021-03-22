@@ -109,21 +109,36 @@ article h3 {
     width: fit-content; 
     /* check! */
 }
+article#kerndocumenten ul,
 article#visitatie ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     list-style: none;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin: 0; padding: 0;
 }
+article#kerndocumenten li a,
 article#visitatie li a {
     display: block;
-    border: 1px solid var(--secondary);
-    width: 6rem;
-    height: 8rem;
-    font-size: .6rem;
+    margin: .6rem;
+    padding: .6em;
+    border: 2px solid var(--secondary);
+    border-radius: var(--radius);
+    font-weight: normal;
     text-decoration: none;
+    background-image: url(/assets/doc.svg);
+    background-position: center left;
+    background-repeat: no-repeat;
+    padding-left: 3rem;
+}
+article#kerndocumenten li a:hover,
+article#visitatie li a:hover {
+    background: var(--secondary);
+    background-image: url(/assets/doc_hl.svg);
+    background-position: center left;
+    background-repeat: no-repeat;
+    color: var(--highlight-primary);
 }
 
 /* TABLES */
