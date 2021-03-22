@@ -119,9 +119,12 @@ article#visitatie ul {
 }
 article#visitatie li a {
     display: block;
-    border: 1px solid var(--secondary);
-    width: 6rem;
-    height: 8rem;
+    margin-bottom: 1rem;
+    padding: .4em;
+    background: var(--highlight-secondary) ;
+    border-radius: var(--radius);
+    width: 8rem;
+    height: 10rem;
     font-size: .6rem;
     text-decoration: none;
 }
