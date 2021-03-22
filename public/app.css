@@ -179,11 +179,10 @@ nav {
     color: var(--secondary);
     padding: 1rem;
     margin-top: 2rem;
-    z-index:999;
 }
 nav ul {
     margin:0; padding:0;
-    list-style:none;
+    list-style: none;
 }
 nav ul li {
     position:relative;
@@ -200,7 +199,7 @@ main {
     display: inline-block;
     position: fixed;
     z-index:11;
-    right: 1rem;
+    left: 1rem;
     bottom: 0.5rem;
 
     padding: .6rem 1.2rem;
@@ -219,7 +218,7 @@ main {
 /* ARTICLES */
 article {
     margin: 0; padding: 0;
-    max-width: 40em;
+    /* max-width: 40em; */
 }
 article > div {
     background-color: var(--highlight-primary);
@@ -331,7 +330,7 @@ footer {
     padding:1rem 0 1rem 1rem;
 }
 
-@media (min-width:50em) {
+@media (min-width:70em) {
     body {
         display:grid;
         padding:1rem;
@@ -348,12 +347,13 @@ footer {
         grid-area: main;
     }
     nav {
+        /* display: inline-block; */
         grid-area: nav;
-        position: fixed;
+        position: fixed; */
         right:1rem;
         top:14rem;
         border-radius:var(--radius);
-        width:42vw;
+        max-width:42vw;
         z-index:1;
         padding:2rem 2rem 2rem 4rem;
         border-radius:var(--radius);
