@@ -12,6 +12,10 @@ mark {
     margin: 1rem 0;
     display: block;
 }
+a {
+    color: var(--secondary);
+    text-decoration: underline;
+}
 figure {
     margin: 1rem 0;
 }
@@ -78,7 +82,7 @@ nav ul li {
     padding-left:1rem;
 }
 nav ul li:before {
-    content: "#";
+    /* content: "-"; */
     position:absolute;
     left:0;
     top:center;
