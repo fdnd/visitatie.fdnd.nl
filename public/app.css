@@ -100,6 +100,10 @@ nav {
     padding: 1rem;
     margin-top: 2rem;
 }
+nav h2{
+    font-size: 1em;
+    font-weight: normal;
+}
 nav ul {
     margin:0; padding:0;
     display: inline;
@@ -216,10 +220,10 @@ nav > a:focus {
 
 /* ARTICLES */
 article {
-    margin: 0; padding: 1rem;
+    margin: 0; padding: 0.5rem;
 }
 article > div {
-    padding: 2rem;
+    padding: 1rem;
     background: var(--highlight-primary);
     color:var(--secondary);
     border: 2px solid var(--highlight-primary);
@@ -227,15 +231,23 @@ article > div {
 }
 article h2 {
     color:var(--highlight-primary);
-    font-size: 2.8rem;
+    /font-size: 2.8rem;
+    font-size: 3.2rem;
+    line-height: 1.2;
 }
 article h3 {
-    color: var(--highlight-primary);
-    background: var(--secondary);
+    /color: var(--highlight-primary);
+    /background: var(--secondary);
+    color: var(--secondary);
+    
     border-radius: var(--radius);
-    padding: 1.5rem;
-    width: fit-content;
+    /padding: 1.5rem;
+    margin: 3.2rem 0;
+    /width: fit-content;
     /* check! */
+    font-size: 2.4rem;
+    font-weight: normal;
+    line-height: 1.2;
 }
 article#kerndocumenten ul,
 article#visitatie ul {
@@ -266,6 +278,31 @@ article#visitatie li a:hover {
     background-position: center left;
     background-repeat: no-repeat;
     color: var(--highlight-primary);
+}
+/* pagination */
+div#pagination{
+    margin: 0; 
+    padding: 0.5rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+div#pagination a{
+    display: inline-block;
+    margin: .2rem;
+    padding: .6rem 1.2rem;
+    background:var(--secondary);
+    color: var(--highlight-primary);
+    border: 1px solid var(--highlight-primary);
+    border-radius: var(--pill);
+    font-weight: normal;
+    text-decoration: none;
+}
+div#pagination a:hover,
+div#pagination a:focus {
+    background:var(--highlight-primary);
+    color: var(--secondary);
 }
 
 /* TABLES */
@@ -341,6 +378,9 @@ footer {
         max-width: calc(100vw - 28rem);
         grid-area: main;
     }
+    article { padding: 1rem;}
+    article > div { padding: 2rem;}
+    div#pagination{ padding: 1rem;}
     nav {
         /* display: inline-block; */
         grid-area: nav;
