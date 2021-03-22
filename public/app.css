@@ -169,6 +169,11 @@ nav li:nth-of-type(6) a {
     transform-origin: center center;
     transform: rotate(1deg);
 }
+nav li:nth-of-type(6) a:hover,
+nav li:nth-of-type(6) a:focus {
+    background:var(--secondary);
+    color: var(--highlight-primary);
+}
 nav li:nth-of-type(7) a {
     border-radius: var(--radius);   
     transform-origin: center center;
@@ -179,6 +184,11 @@ nav li:nth-of-type(8) a {
     color: var(--secondary);
     transform-origin: center center;
     transform: rotate(3deg);
+}
+nav li:nth-of-type(8) a:hover,
+nav li:nth-of-type(8) a:focus {
+    background:var(--secondary);
+    color: var(--highlight-primary);
 }
 
 nav li:nth-of-type(1) a.active,
