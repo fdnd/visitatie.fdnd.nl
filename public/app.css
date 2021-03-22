@@ -150,10 +150,9 @@ header {
     align-items: center;
     justify-content: flex-end;
 }
-header img,
-footer img {
-    width: 30%;
-    margin-right: 1.25rem;
+header img {
+    width: 10rem;
+    margin-right: 2rem;
 }
 header h1 {
     color: var(--primary);
