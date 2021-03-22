@@ -205,6 +205,7 @@ main {
     bottom: 0.5rem;
 
     padding: .6em;
+    border: 1px solid var(--highlight-secondary);
     border-radius: var(--radius);
     font-weight: normal;
     text-decoration: none;
