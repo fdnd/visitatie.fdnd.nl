@@ -218,6 +218,32 @@ nav > a:focus {
     color: var(--secondary);
 }
 
+/* PAGINATION */
+div#pagination{
+    margin: 0; 
+    padding: 0.5rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+div#pagination a{
+    display: inline-block;
+    margin: .2rem;
+    padding: .6rem 1.2rem;
+    background:var(--secondary);
+    color: var(--highlight-primary);
+    border: 1px solid var(--highlight-primary);
+    border-radius: var(--pill);
+    font-weight: normal;
+    text-decoration: none;
+}
+div#pagination a:hover,
+div#pagination a:focus {
+    background:var(--highlight-primary);
+    color: var(--secondary);
+}
+
 /* ARTICLES */
 article {
     margin: 0; padding: 0.5rem;
@@ -274,31 +300,6 @@ article#visitatie li a:hover {
     background-repeat: no-repeat;
     color: var(--highlight-primary);
 }
-/* pagination */
-div#pagination{
-    margin: 0; 
-    padding: 0.5rem;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-div#pagination a{
-    display: inline-block;
-    margin: .2rem;
-    padding: .6rem 1.2rem;
-    background:var(--secondary);
-    color: var(--highlight-primary);
-    border: 1px solid var(--highlight-primary);
-    border-radius: var(--pill);
-    font-weight: normal;
-    text-decoration: none;
-}
-div#pagination a:hover,
-div#pagination a:focus {
-    background:var(--highlight-primary);
-    color: var(--secondary);
-}
 
 /* TABLES */
 table {
@@ -333,7 +334,7 @@ table sup {
     padding: 0;
     font-size: .6rem;
 }
-table#leerresultaten tbody th {
+table.leerresultaten tbody th {
     white-space: nowrap;
     vertical-align: top;
 }
