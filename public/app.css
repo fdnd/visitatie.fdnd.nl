@@ -29,7 +29,7 @@ body {
 
     /* Creating Tomorrow payoff */
     background-image: url(/assets/hvapayoff.svg);
-    background-position: bottom 1rem right 1rem;
+    background-position: bottom 2rem right 2rem;
     background-repeat: no-repeat;
     background-size: 10rem;
 }
