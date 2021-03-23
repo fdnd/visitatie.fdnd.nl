@@ -334,7 +334,7 @@ table sup {
     padding: 0;
     font-size: .6rem;
 }
-table#leerresultaten tbody th {
+table.leerresultaten tbody th {
     white-space: nowrap;
     vertical-align: top;
 }
