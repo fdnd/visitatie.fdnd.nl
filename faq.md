@@ -1,4 +1,15 @@
+
+## Management vragen
+
+## Vragen David de Vries
+
+## Vragen verslag Jurrien
+
+
+## Vragen visitatie commissie
+
 Voor het panel is op de online bezoekdag geen voorstellingsrondje nodig bij de verschillende gesprekken. 
+
 Graag de gesprekspartners hierover op voorhand informeren 
 (dit om tijdsverlies en onhandige situaties te voorkomen)
 
