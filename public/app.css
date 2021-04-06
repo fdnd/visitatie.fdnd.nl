@@ -300,6 +300,12 @@ article#visitatie li a:hover {
     background-repeat: no-repeat;
     color: var(--highlight-primary);
 }
+article#visitatie li a.video {
+    background-image: url(/assets/vid.svg);
+}
+article#visitatie li a.video:hover {
+    background-image: url(/assets/vid_hl.svg);
+}
 
 /* TABLES */
 table {
