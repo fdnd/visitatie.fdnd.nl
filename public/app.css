@@ -269,7 +269,7 @@ article > div {
     border-radius: var(--radius);
 }
 article h2 {
-    color:var(--highlight-primary);
+    color:var(--primary);
     font-size: 3.2rem;
     line-height: 1.2;
 }
